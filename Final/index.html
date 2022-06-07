@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SLK</title>
+	
+</head>
+
+
+<link rel="stylesheet" type="text/css" href="main-styles.css">
+
+<body>
+
+
+
+	<div class="header-bar">
+	  <nav class="nav">
+   <div class="logo">
+	   
+
+ <img src="logofinal.png" alt="">
+
+   </div>
+   <div class="nav-items">
+    <ul>
+     <li>
+      <a href="#about">About Us</a>
+     </li>
+     <li>
+      <a href="#services">Services</a>
+     </li>
+     <li>
+      <a href="#reviews">Reviews</a>
+     </li>
+     <li>
+		 <a href="#contactus">Contact Us</a>
+		
+    </ul>
+   </div>
+  </nav>
+				
+			</div>
+
+
+	<div class="hero">
+		
+		<div class="heading1">A well maintained, professionally designed lawn is only a click or call away.</div>
+		<div class="body1">TRANSFORM YOUR OUTDOOR LIVING SPACE!</div>
+		
+	</div>
+
+	<div class="spacer"></div>
+
+
+
+
+
+	
+
+<div id="about" class="aboutus">
+		<div class="heading2">About Us</div>
+		<div class="body2">Local, family owned lawn and landscape company, started in 2011, servicing the Tulsa metro area.</div>
+		
+
+	</div>
+	<div>
+
+	</div>
+
+	<div class="spacer2"></div>
+	
+
+
+
+
+
+	<div id="services" class="services-container">
+
+		
+
+	<div class="three-piece-container">
+
+		  <div class="step-item">
+			   <button class="button-residential">Residential</button>
+		  </div>
+		  <div class="step-item">
+			<button class="button-commercial">Commercial</button>
+		</div>
+	   <div class="step-item">
+			   <button class="button-tree-work">Tree Work</button>
+			   </div>
+		   
+		  </div>
+	<div class="three-piece-container">
+		
+		  <div class="step-item">
+		  
+			<button class="button-leaf-removal">Leaf Removal</button>
+		</div>
+	
+	   <div class="step-item">
+		
+			   <button class="button-custom-installs">Flower Beds</button>
+		  </div>
+	   
+		  <div class="step-item">
+		   
+			   <button class="button-upcoming">COMING SOON!</button>
+		   
+
+		   </div>
+		 
+ </div>
+	</div>
+
+	<div class="spacer3"></div>
+
+
+		
+	</div>
+
+	<div id="reviews" class = "spacer4"></div>
+
+
+	<div class="iframe">
+
+		<iframe class="google" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12890.30994833309!2d-95.665002!3d36.12815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc571da886419b264!2sSLK%20Lawn%20and%20Landscape!5e0!3m2!1sen!2smx!4v1654367969999!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<img class="reviews" src="reviews.png" alt="">
+
+
+
+	</div>
+
+	<div id="contactus">
+
+		<form onsubmit="sendEmail(); reset(); return false;">
+		<h2>Leave your info and we will get back to you as soon as we can!</h2>
+		<input type="text" id="name"	placeholder="Name" required>
+		<input type="email" id="email" placeholder="Email" required>
+		<input type="text" id="phone" placeholder="Phone number" required>
+		<button class="submit" type="submit">Send</button>
+
+		</form>
+
+	</div>
+
+
+
+
+
+	<footer>
+<h5>
+	SLK Lawn & Landscape
+</h5>
+<h5>
+	Tulsa, OK 74116
+</h5>
+<h5>
+	For more information call (918)231-1363
+</h5>
+
+	</footer>
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail(){
+Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+}
+
+</script>
+</body>
+</html>
